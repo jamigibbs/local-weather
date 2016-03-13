@@ -22,6 +22,9 @@
 
     this.localWeather = function localWeather() {
 
+      getId('unitToggle').style.display = 'none';
+      getId('unit').style.display = 'none';
+
       navigator.geolocation.getCurrentPosition( function(pos){
 
         var lat = pos.coords.latitude;
@@ -43,6 +46,9 @@
               var weatherData = JSON.parse(xmlhttp.responseText);
               var weatherPath = weatherData.weather[0];
 
+              getId('unitToggle').style.display = 'inline-block';
+              getId('unit').style.display = 'inline-block';
+              getId('loading').style.display = 'none';
               getId("temp").innerHTML = Math.round(weatherData.main.temp);
 
               getId("weather-details").innerHTML =
