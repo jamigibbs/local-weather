@@ -32,7 +32,7 @@
         var iconUrl = "http://openweathermap.org/img/w/";
         var weatherKey = "e276abfa164dc936a0df70fead6e209a";
         var unitsFormat = 'imperial'; // metric (C) or imperial (F)
-        var weatherApi = weatherUrl + '?lat=' + lat + '&lon=' + long + '&appid=' + weatherKey;
+        var weatherApi = weatherUrl + '?lat=' + lat + '&lon=' + long + '&appid=' + weatherKey + '&units=' + unitsFormat;
 
         var xmlhttp = new XMLHttpRequest();
 
@@ -72,7 +72,7 @@
           }
         };
 
-        xmlhttp.open("GET", weatherApi + '&units=' + unitsFormat, true);
+        xmlhttp.open("GET", weatherApi, true);
         xmlhttp.send();
 
       }, error, options);
