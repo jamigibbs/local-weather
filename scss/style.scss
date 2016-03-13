@@ -94,3 +94,21 @@ img#icon {
 #loading {
   font-size: 2em;
 }
+
+/*--------------------------------------------------------------
+  3.0 Footer
+--------------------------------------------------------------*/
+#footer {
+  text-align: center;
+  color: #3a4046;
+  font-size: 14px;
+  margin-top: 4em;
+  a {
+    color: #3a4046;
+    text-decoration: none;
+    @include transition(all .2s ease-in-out);
+    &:hover {
+      color: #FF5B33;
+    }
+  }
+}
