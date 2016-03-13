@@ -9,7 +9,7 @@
   <meta name="description" content="Your Local Weather">
   <meta name="author" content="Jami Gibbs">
 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:100,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
 
   <!--[if lt IE 9]>
@@ -19,13 +19,19 @@
 
 <body>
 
-  <div class="temp-group">
-    <span id="temp"></span>&nbsp;
-    <span id="unit">F</span>
-    <button id="unitToggle">Toggle</button>
-  </div>
+  <section class="parent">
+    <div class="child">
 
-  <div id="weather-details"></div>
+      <div class="temp-group">
+        <span id="temp"></span>&nbsp;
+        <span id="unit">F</span>
+        <button id="unitToggle">&deg; F | &deg; C</button>
+      </div>
+
+      <div id="weather-details"></div>
+
+    </div>
+  </section>
 
   <script src="js/app.js"></script>
 </body>

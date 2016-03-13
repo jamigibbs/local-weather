@@ -1,3 +1,75 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Defaults
+2.0 Weather Details
+--------------------------------------------------------------*/
+body {
+  font-family: 'Open Sans', serif; }
 
+/*--------------------------------------------------------------
+  1.0 Defaults
+--------------------------------------------------------------*/
+html, body {
+  height: 100%; }
+
+body {
+  background-color: #252A30;
+  color: white; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center; }
+  .parent > .child {
+    display: table-cell;
+    vertical-align: middle; }
+
+/*--------------------------------------------------------------
+  2.0 Weather Details
+--------------------------------------------------------------*/
+.temp-group #temp, .temp-group #unit {
+  font-weight: 700;
+  display: inline-block; }
+.temp-group #temp {
+  font-size: 10em; }
+.temp-group #unit {
+  font-size: 2em; }
+.temp-group button#unitToggle {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  border: none;
+  background-color: #35393f;
+  color: #666e77;
+  padding: 0.4em 1em;
+  font-size: 1em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .temp-group button#unitToggle:hover {
+    background-color: white;
+    color: #252A30; }
+
+#city {
+  font-size: 4em; }
+
+#description, img#icon {
+  display: inline-block; }
+
+img#icon {
+  filter: brightness(0) invert(1);
+  position: relative;
+  top: 0.9em; }
+
+#description {
+  font-size: 1.5em;
+  padding-right: 0.5em; }
 
 /*# sourceMappingURL=style.css.map */
